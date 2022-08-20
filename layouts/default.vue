@@ -58,12 +58,75 @@
     </v-app-bar>
 
     <!-- Views rendered  -->
-    <v-scroll-x-transition mode="in" hide-on-leave="true">
-      <Nuxt></Nuxt>
-    </v-scroll-x-transition>
+    <!-- <v-scroll-x-transition mode="in" hide-on-leave="true"> -->
+    <Nuxt></Nuxt>
+    <!-- </v-scroll-x-transition> -->
 
     <v-footer dark padless class="justify-center">
       <v-card
+        flat
+        tile
+        class="font-weight-normal grey--text text--lighten-1 text-center"
+        width="100%"
+      >
+        <v-card-text>
+          <v-container>
+            <v-row class="text-left">
+              <v-col>
+                <p class="text-h5">CyberWaves</p>
+              </v-col>
+            </v-row>
+            <v-row class="text-left">
+              <v-col class="text-subtitle-1">
+                <p class="text-subtitle-1">Organisation</p>
+                <NuxtLink to="/">About Us</NuxtLink>
+                <br />
+                <NuxtLink to="/">Our Principles</NuxtLink>
+              </v-col>
+              <v-col class="text-subtitle-1">
+                <p>Products</p>
+                <NuxtLink to="/">Oceans</NuxtLink>
+                <br />
+                <NuxtLink to="/">Beaches</NuxtLink>
+              </v-col>
+              <v-col class="text-subtitle-1">
+                <p>Education</p>
+                <NuxtLink to="/">Technologies</NuxtLink>
+                <br />
+                <NuxtLink to="/">Blog</NuxtLink>
+              </v-col>
+            </v-row>
+            <v-divider class="my-12"></v-divider>
+
+            <v-row class="text-left">
+              <v-col>
+                <v-btn
+                  v-for="({ icon, link }, i) in socials"
+                  :key="i"
+                  class="white--text mr-3"
+                  icon
+                  link
+                  :href="link"
+                  target="_blank"
+                >
+                  <v-icon large>
+                    {{ icon }}
+                  </v-icon>
+                  <!-- <div class="px-10"></div> -->
+                </v-btn>
+              </v-col>
+            </v-row>
+            <v-row class="text-left">
+              <v-col>
+                &copy;{{ new Date().getFullYear() }} — Made with 💙 by
+                <strong>James Tcheng</strong>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card-text>
+      </v-card>
+
+      <!-- <v-card
         flat
         tile
         class="font-weight-light grey--text text--lighten-1 text-center"
@@ -104,14 +167,14 @@
           molestiae officia aspernatur.
         </v-card-text>
 
-        <v-divider></v-divider>
-        <!-- <div>&copy; {{ new Date().getFullYear() }}</div> -->
+        <v-divider></v-divider> -->
+      <!-- <div>&copy; {{ new Date().getFullYear() }}</div> -->
 
-        <v-card-text class="font-weight-light white--text text-center">
+      <!-- <v-card-text class="font-weight-light white--text text-center">
           &copy;{{ new Date().getFullYear() }} — Made with 💙 by
           <strong>James Tcheng</strong>
         </v-card-text>
-      </v-card>
+      </v-card> -->
     </v-footer>
   </v-app>
 </template>
@@ -140,3 +203,13 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+</style>
+e

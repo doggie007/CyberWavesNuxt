@@ -2,15 +2,6 @@
   <v-container>
     <v-row>
       <v-card tile>
-        <v-window v-model="onboarding" vertical>
-          <SlidesItem
-            v-for="(item, i) in fiveFramework"
-            :key="`card-${i}`"
-            :item="item"
-            :number="i"
-          ></SlidesItem>
-        </v-window>
-
         <v-card-actions class="justify-space-between">
           <v-btn text @click="prev">
             <v-icon>mdi-chevron-left</v-icon>
@@ -31,6 +22,14 @@
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
         </v-card-actions>
+        <v-window v-model="onboarding" vertical>
+          <SlidesItem
+            v-for="(item, i) in fiveFramework"
+            :key="`card-${i}`"
+            :item="item"
+            :number="i"
+          ></SlidesItem>
+        </v-window>
       </v-card>
     </v-row>
   </v-container>
@@ -39,7 +38,6 @@
 <script>
 import SlidesItem from './SlidesItem.vue'
 export default {
-  // components: ["SlidesItem"],
   data: () => ({
     length: 5,
     onboarding: 0,
