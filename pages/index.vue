@@ -1,12 +1,12 @@
 <template>
-  <v-content>
+  <v-main>
     <section id="hero">
       <!-- <v-expand-transition> -->
       <v-slide-y-transition>
         <v-row no-gutters>
           <v-img
             :height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-            :src="require('../static/ocean-cover.jpg')"
+            :src="require('assets/ocean-cover.jpg')"
             gradient="to top right, rgba(0,0,0,0.35), rgba(0,0,0,.7)"
             transition="slide-x-transition"
             dark
@@ -80,7 +80,7 @@
           public disengagement and encourage collaborative action. <br />
         </v-responsive>
 
-        <v-row class="mx-auto" no-gutters>
+        <!-- <v-row class="mx-auto" no-gutters>
           <v-col>
             <v-avatar class="elevation-12 mb-12" size="128">
               <v-img src=""></v-img>
@@ -99,7 +99,7 @@
             </v-avatar>
             <div class="text-h6">Name Here</div>
           </v-col>
-        </v-row>
+        </v-row> -->
 
         <div class="py-5"></div>
 
@@ -158,7 +158,7 @@
     <section id="impact">
       <v-parallax
         :height="$vuetify.breakpoint.smAndDown ? 700 : 500"
-        :src="require('../static/dimmed-forest.jpg')"
+        :src="require('assets/dimmed-forest.jpg')"
       >
         <v-container fill-height justify-center>
           <v-row></v-row>
@@ -236,18 +236,11 @@
 
       <div class="py-12"></div>
     </section>
-  </v-content>
+  </v-main>
 </template>
-
-<style scoped>
-.fb-btn {
-  border: 2px solid #000;
-}
-</style>
 
 <script>
 export default {
-  name: 'HomePage',
   data() {
     return {
       show: true,
@@ -292,5 +285,23 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Index page description',
+        },
+      ],
+    }
+  },
 }
 </script>
+
+<style scoped>
+.fb-btn {
+  border: 2px solid #000;
+}
+</style>

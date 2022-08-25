@@ -224,7 +224,6 @@ export default {
           src: [
             'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js',
             'https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=132',
-            '../assets/js/local.js',
           ],
         },
       ],

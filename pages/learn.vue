@@ -1,7 +1,7 @@
 <template>
-  <v-content>
+  <v-main>
     <h1>Learn View Page</h1>
-  </v-content>
+  </v-main>
 </template>
 <script>
 export default {

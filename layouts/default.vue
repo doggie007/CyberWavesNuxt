@@ -76,20 +76,26 @@
                 <p class="text-h5">CyberWaves</p>
               </v-col>
             </v-row>
-            <v-row class="text-left">
-              <v-col class="text-subtitle-1">
-                <p class="text-subtitle-1">Organisation</p>
-                <NuxtLink to="/">About Us</NuxtLink>
+            <v-row class="text-left text-subtitle-2 text-sm-subtitle-1">
+              <v-col>
+                <p>Organisation</p>
+                <NuxtLink to="/about">About Us</NuxtLink>
                 <br />
-                <NuxtLink to="/">Our Principles</NuxtLink>
+                <NuxtLink
+                  :to="{ path: '/about', hash: 'five-principles-intro' }"
+                  >Our Principles</NuxtLink
+                >
+                <br />
+                <NuxtLink :to="{ path: '/about', hash: 'five-principles' }">
+                </NuxtLink>
               </v-col>
-              <v-col class="text-subtitle-1">
+              <v-col>
                 <p>Products</p>
                 <NuxtLink to="/">Oceans</NuxtLink>
                 <br />
                 <NuxtLink to="/">Beaches</NuxtLink>
               </v-col>
-              <v-col class="text-subtitle-1">
+              <v-col>
                 <p>Education</p>
                 <NuxtLink to="/">Technologies</NuxtLink>
                 <br />

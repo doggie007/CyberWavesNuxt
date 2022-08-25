@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-main>
     <!-- Intro -->
     <section id="our-vision">
       <v-container
@@ -31,7 +31,7 @@
               width="25vw"
               max-width="500"
               transition="slide-x-transition"
-              :src="require('../static/rocky-beach.jpg')"
+              :src="require('assets/rocky-beach.jpg')"
               gradient="to bottom, rgba(0,0,0,0.2), rgba(50,0,50,.3)"
             ></v-img>
           </v-flex>
@@ -91,7 +91,8 @@
 
     <!-- Sdgs -->
     <section id="sdgs">
-      <v-container class="mt-10" fluid style="min-height: 60vh">
+      <div class="py-5"></div>
+      <v-container fluid>
         <v-row align-content="center" justify="center">
           <v-col cols="12">
             <v-flex>
@@ -120,7 +121,7 @@
               min-width="50"
               max-width="150"
               transition="slide-x-transition"
-              :src="require('../static/sdg-14.png')"
+              :src="require('assets/sdg-14.png')"
             ></v-img>
           </v-col>
 
@@ -129,7 +130,7 @@
               min-width="50"
               max-width="150"
               transition="slide-x-transition"
-              :src="require('../static/sdg-15.png')"
+              :src="require('assets/sdg-15.png')"
             ></v-img>
           </v-col>
           <v-col cols="2">
@@ -137,7 +138,7 @@
               min-width="50"
               max-width="150"
               transition="slide-x-transition"
-              :src="require('../static/sdg-12.png')"
+              :src="require('assets/sdg-12.png')"
             ></v-img>
           </v-col>
           <v-col cols="2">
@@ -145,7 +146,7 @@
               min-width="50"
               max-width="150"
               transition="slide-x-transition"
-              :src="require('../static/sdg-13.jpg')"
+              :src="require('assets/sdg-13.jpg')"
             ></v-img>
           </v-col>
           <v-col cols="2">
@@ -153,13 +154,44 @@
               min-width="50"
               max-width="150"
               transition="slide-x-transition"
-              :src="require('../static/sdg-10.png')"
+              :src="require('assets/sdg-10.png')"
             ></v-img>
           </v-col>
         </v-row>
       </v-container>
     </section>
-    <div class="py-10 hidden-sm-and-up"></div>
+    <div class="py-12">
+      <v-divider></v-divider>
+    </div>
+
+    <section id="our-team">
+      <v-container class="mx-auto" style="margin: 0; padding: 0">
+        <v-row>
+          <v-col>
+            <h1 class="text-center text-h4 text-sm-h3 font-weight-bold">
+              Our Team
+            </h1>
+            <v-responsive class="mx-auto pt-2" width="56">
+              <v-divider
+                class="mb-1"
+                style="background: whitesmoke"
+              ></v-divider>
+              <v-divider style="background: white"></v-divider>
+            </v-responsive>
+          </v-col>
+        </v-row>
+        <v-row justify="center">
+          <TeamMember
+            name="James Tcheng"
+            title="Founder"
+            :socials="socials"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, saepe velit quo corrupti dolores sequi voluptatibus, quis nisi ipsa nesciunt fugiat hic corporis. Pariatur, ab? Ducimus, obcaecati dicta? Molestias, repellat possimus hic ad vitae doloremque vero dolorem nam? Fugit corrupti blanditiis reprehenderit ducimus fuga, alias quo doloremque aspernatur atque esse!"
+            innerimage="image-self.jpg"
+          />
+        </v-row>
+      </v-container>
+      <div class="py-6"></div>
+    </section>
 
     <!-- Five principles intro -->
     <section id="five-principles-intro">
@@ -296,7 +328,7 @@
       <div style="min-height: 100vh">
         <v-responsive>
           <v-img
-            :src="require('../static/waves-background.png')"
+            :src="require('assets/waves-background.png')"
             style="max-height: 25vh"
           ></v-img>
         </v-responsive>
@@ -319,7 +351,7 @@
       </div>
     </section>
     <div class="py-8"></div>
-  </v-content>
+  </v-main>
 </template>
 
 <script>
@@ -329,6 +361,27 @@ export default {
   data() {
     return {
       window: 0,
+      socials: [
+        { icon: 'mdi-facebook', link: 'https://www.facebook.com/' },
+        { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+        {
+          icon: 'mdi-linkedin',
+          link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+        },
+        { icon: 'mdi-github', link: 'https://github.com/doggie007' },
+      ],
+    }
+  },
+  head() {
+    return {
+      title: 'About',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'About page description',
+        },
+      ],
     }
   },
 }
