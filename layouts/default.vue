@@ -83,23 +83,24 @@
                 <br />
                 <NuxtLink
                   :to="{ path: '/about', hash: 'five-principles-intro' }"
-                  >Our Principles</NuxtLink
+                  >Our Belief</NuxtLink
                 >
                 <br />
-                <NuxtLink :to="{ path: '/about', hash: 'five-principles' }">
-                </NuxtLink>
+                <NuxtLink :to="{ path: '/about', hash: 'our-team' }"
+                  >Our Team</NuxtLink
+                >
               </v-col>
               <v-col>
                 <p>Products</p>
-                <NuxtLink to="/">Oceans</NuxtLink>
+                <NuxtLink to="/coming-soon">Oceans</NuxtLink>
                 <br />
-                <NuxtLink to="/">Beaches</NuxtLink>
+                <NuxtLink to="/coming-soon">Beaches</NuxtLink>
               </v-col>
               <v-col>
                 <p>Education</p>
-                <NuxtLink to="/">Technologies</NuxtLink>
+                <NuxtLink to="/coming-soon">Technologies</NuxtLink>
                 <br />
-                <NuxtLink to="/">Blog</NuxtLink>
+                <NuxtLink to="/coming-soon">Blog</NuxtLink>
               </v-col>
             </v-row>
             <v-divider class="my-12"></v-divider>

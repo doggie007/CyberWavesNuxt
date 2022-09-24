@@ -70,9 +70,9 @@
                 We envision a better world where technology helps us to bridge
                 the gap between our desire for a healthy planet and achievable +
                 actionable solutions. We hope that through education and
-                demonstrating the power of current technology, we can empower
-                communities to be fearless at solving the ocean pollution
-                problem themselves.
+                demonstrating the power of current technology, we can help other
+                organisations and empower communities to be fearless at solving
+                the ocean pollution problem themselves.
               </p>
               <v-btn
                 class="ma-3 align-self-center"
@@ -99,7 +99,7 @@
               <p class="text-h5 font-weight-bold text-center text-md-h4">
                 “Plastic pollution free world is not a choice but a commitment
                 to life – <br />
-                a commitment to the next generation.”
+                a commitment to the next generation.” - Amit Ray
               </p>
             </v-flex>
           </v-col>
@@ -107,11 +107,11 @@
         <v-row justify="center">
           <v-col cols="12" style="max-width: 80vw">
             <p class="text-body-2 text-md-body-1 font-weight-bold text-left">
-              We work to increase youth participation on pressing health issues.
-              Our ambition is to create empowering spaces for cooperative
-              dialogue and action where youth showcase talent and launch
-              initiatives. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Consequuntur itaque iste adipisci labore, nemo expedita.
+              We all have to play a part in the fight to save our oceans. Ocean
+              plastic pollution destroys ecosystems below and above water,
+              affects the health and livelihoods of the most vulnerable
+              communities, and jeopardises its key role as a carbon sink which
+              directly tackles climate change.
             </p>
           </v-col>
         </v-row>
@@ -182,11 +182,28 @@
         </v-row>
         <v-row justify="center">
           <TeamMember
-            name="James Tcheng"
-            title="Founder"
+            v-for="(
+              { name, title, socials, description, innerimage }, i
+            ) in team.slice(0, 1)"
+            :key="i"
+            :name="name"
+            :title="title"
             :socials="socials"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, saepe velit quo corrupti dolores sequi voluptatibus, quis nisi ipsa nesciunt fugiat hic corporis. Pariatur, ab? Ducimus, obcaecati dicta? Molestias, repellat possimus hic ad vitae doloremque vero dolorem nam? Fugit corrupti blanditiis reprehenderit ducimus fuga, alias quo doloremque aspernatur atque esse!"
-            innerimage="image-self.jpg"
+            :description="description"
+            :innerimage="innerimage"
+          />
+        </v-row>
+        <v-row justify="center">
+          <TeamMember
+            v-for="(
+              { name, title, socials, description, innerimage }, i
+            ) in team.slice(1, 5)"
+            :key="i"
+            :name="name"
+            :title="title"
+            :socials="socials"
+            :description="description"
+            :innerimage="innerimage"
           />
         </v-row>
       </v-container>
@@ -278,15 +295,22 @@
                       <p
                         class="text-body-2 text-sm-body-1 text-lg-h6 font-weight-light pa-2 text-justify"
                       >
+                        We believe in the
+                        <strong>combined power of people and technology</strong>
+                        as a means to tackle the ocean pollution problem, in
+                        both education and actionable solutions. We realise the
+                        importance of <strong>open-source technology</strong> as
+                        it is free and accessible to all, which we believe is
+                        the only way we will be able address our environmental
+                        concerns efficiently.
+                        <br />
+                        <br />
                         Follow our <strong>5x5x5 framework</strong> to
                         understand how we generate impact, beginning with
                         identifying the key problems, then applying key pillar
-                        principles, and finally creating impactful outcomes.
+                        principles, and finally creating solutions which lead to
+                        impactful outcomes.
                         <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Debitis reprehenderit ut optio iusto distinctio ipsa
-                        labore architecto temporibus dolor mollitia dicta saepe
-                        suscipit
                       </p>
                     </v-card>
                   </v-col>
@@ -311,7 +335,8 @@
                         <strong>Key Principle</strong>
                       </v-timeline-item>
                       <v-timeline-item icon="mdi-star" fill-dot>
-                        Generate an <strong>Impactful Outcome</strong>
+                        Create <strong>Solution</strong> that brings an
+                        <strong>Impactful Outcome</strong>
                       </v-timeline-item>
                     </v-timeline>
                   </v-col>
@@ -328,6 +353,7 @@
       <div style="min-height: 100vh">
         <v-responsive>
           <v-img
+            eager
             :src="require('assets/waves-background.png')"
             style="max-height: 25vh"
           ></v-img>
@@ -361,14 +387,79 @@ export default {
   data() {
     return {
       window: 0,
-      socials: [
-        { icon: 'mdi-facebook', link: 'https://www.facebook.com/' },
-        { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+      team: [
         {
-          icon: 'mdi-linkedin',
-          link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+          name: 'James Tcheng',
+          title: 'Founder',
+          socials: [
+            { icon: 'mdi-facebook', link: 'https://www.facebook.com/' },
+            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+            },
+            { icon: 'mdi-github', link: 'https://github.com/doggie007' },
+          ],
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, saepe velit quo corrupti dolores sequi voluptatibus, quis nisi ipsa nesciunt fugiat hic corporis. Pariatur, ab? Ducimus, obcaecati dicta? Molestias, repellat possimus hic ad vitae doloremque vero dolorem nam? Fugit corrupti blanditiis reprehenderit ducimus fuga, alias quo doloremque aspernatur atque esse!',
+          innerimage: 'james.jpg',
         },
-        { icon: 'mdi-github', link: 'https://github.com/doggie007' },
+        {
+          name: 'Dhruvit Pindoria',
+          title: 'Managing Director',
+          socials: [
+            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+            },
+          ],
+          description:
+            'The environment has always been a keen interest of mine, running clubs since primary school. However, after visiting my home country of India frequently, the level of water pollution was incredibly high which inspired my urge to work on water conservation - an often overlooked issue when discussing the environment.',
+          innerimage: 'dhruvit.jpeg',
+        },
+        {
+          name: 'Ptolemy Egan',
+          title: 'Outreach Director',
+          socials: [
+            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+            },
+          ],
+          description:
+            'I am an academic scholar at a boarding school near London, but I come from East Anglia. My family has lived there for rather a long time and we feel a strong connection with the nature and landscape around us. As such, when walking or enjoying nature, I am disappointed to see littering, plastic waste, and environmental degradation. I have always been keen to safeguard what I have been privileged to grow up around, and am now eager to counter the risks to it face on. At school, I also play several sports, and so enjoy working in a team.',
+          innerimage: 'dummy.jpg',
+        },
+        {
+          name: 'Luca Matta',
+          title: 'Operations Director',
+          socials: [
+            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+            },
+          ],
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem vitae obcaecati molestiae, placeat nostrum est ab modi a in?',
+          innerimage: 'dummy.jpg',
+        },
+        {
+          name: 'Arjun Bahra',
+          title: 'Development Manager',
+          socials: [
+            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+            },
+          ],
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem vitae obcaecati molestiae, placeat nostrum est ab modi a in?',
+          innerimage: 'dummy.jpg',
+        },
       ],
     }
   },

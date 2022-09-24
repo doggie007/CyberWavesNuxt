@@ -1,10 +1,10 @@
 <template>
-  <v-main>
-    <h1>Learn View Page</h1>
-  </v-main>
+  <ComingSoon></ComingSoon>
 </template>
 <script>
+import ComingSoon from './coming-soon.vue'
 export default {
   name: 'LearnPage',
+  components: { ComingSoon },
 }
 </script>

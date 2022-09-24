@@ -73,11 +73,15 @@
           class="pa-2 mx-auto title font-weight-light mb-8 text-justify"
           max-width="720"
         >
-          We strive to raise awareness of the gravity of the
-          <strong>ocean pollution problem</strong> through utilisation of
-          technological advances such as
-          <strong>AI and satellite imaging</strong>, endeavouring to combat
-          public disengagement and encourage collaborative action. <br />
+          We aim to raise awareness of the gravity of the
+          <strong>ocean pollution problem</strong> through education and sharing
+          advanced open-source technology that tackle the issue, including
+          <strong>machine learning and satellite imaging</strong>, endeavouring
+          to combat public disengagement and encourage collaborative action.
+          <br />
+          Partnering with ocean conservation organisations across the globe, we
+          strive to equip them with essential technological weapons in our
+          common fight to protect our oceans.
         </v-responsive>
 
         <!-- <v-row class="mx-auto" no-gutters>
@@ -183,7 +187,15 @@
             </v-col>
           </v-row>
           <div>
-            <v-btn class="fb-btn" elevation="24" large rounded dark>
+            <v-btn
+              class="fb-btn"
+              elevation="24"
+              large
+              rounded
+              dark
+              nuxt
+              to="/coming-soon"
+            >
               Learn more about Our Impact
               <v-icon>mdi-chevron-right</v-icon>
             </v-btn>
@@ -193,7 +205,7 @@
     </section>
 
     <!-- Technology display -->
-    <section id="blog">
+    <!-- <section id="blog">
       <div class="py-12"></div>
 
       <v-container>
@@ -235,7 +247,7 @@
       </v-container>
 
       <div class="py-12"></div>
-    </section>
+    </section> -->
   </v-main>
 </template>
 
@@ -279,9 +291,9 @@ export default {
         },
       ],
       stats: [
-        ['3', 'Organisation partners'],
-        ['10k', 'Users'],
-        ['40m', 'Funding'],
+        ['15+', 'Volunteers'],
+        ['2', 'Organisation partners'],
+        ['200+', 'Users'],
       ],
     }
   },
@@ -292,7 +304,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Index page description',
+          content:
+            'CyberWaves is a platform that educates and shares open-source technology',
         },
       ],
     }

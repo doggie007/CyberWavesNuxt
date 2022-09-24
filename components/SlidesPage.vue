@@ -45,30 +45,30 @@ export default {
       {
         issue: 'Human Psychology',
         issueDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
+          'Psychology can no doubt account for general disengagement in mitigating environmental impacts, and ocean plastic pollution is one of them. Centuries of temporal discounting means that it is difficult to see the dangers this problem will lead to in the coming decades and makes short-term behavioural change difficult, causing the un-ending cycle of plastic creation and waste.',
         principle: 'Encourage Learning',
         principleDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
+          'Through education, we can overcome our instinctive thoughts and be nudged towards thinking more about the pressing issue more.',
         outcome:
-          'Real-time and engaging approach to the ocean pollution education',
+          'Engaging approach to ocean pollution education that raises awareness',
         outcomeDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
+          'Educational materials combined with an interactive approach made available through technology can lead to greater information retention, causing people to be conscious of their own actions and spread awareness within communities.',
       },
       {
-        issue: 'Personal Connection',
+        issue: 'Lack of technological usage',
         issueDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
-        principle: 'Improve Knowledge Translation',
+          'Many organisations and communities around the world do not have the technological resources and manpower to solve the ocean pollution problem efficiently. Some might not realise the power of technology in the combat to this problem.',
+        principle: 'Share open-source technology',
         principleDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
-        outcome: 'Effective communication that incentivises action',
+          'We believe in the power of technology to tackle the problem in the best and most efficient manner.',
+        outcome: 'Provide applications which enable change',
         outcomeDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
+          'Through sharing, people are empowered with the knowledge required to tackle the problem themselves and organisations can capitalise from state-of-the-art technology to reduce ocean pollution.',
       },
       {
         issue: 'Feasibility of Problem Solving',
         issueDescription:
-          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
+          ' fatalism is important in consideration with any environmental problem given these problems are occurring on a global scale. The fact that avoiding the use of plastics is essentially impossible in modern life, it is easy to believe individual actions make no impact.',
         principle: 'Foster Changes in Attitudes',
         principleDescription:
           'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis excepturi labore similique repellat aspernatur? Cumque corrupti quod debitis et ex illum, eum ducimus totam blanditiis eius, natus deserunt nesciunt veritatis?',
