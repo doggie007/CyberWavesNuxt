@@ -419,43 +419,27 @@ export default {
           innerimage: 'dhruvit.jpeg',
         },
         {
+          name: 'Luca Matta',
+          title: 'Operations Director',
+          socials: [],
+          description:
+            "Luca is a 17-year-old student at Eton College, studying Maths, Further Maths, Physics, and Chemistry at A-Level. He wants to study Engineering at university and is passionate about using engineering to solve climate and environmental issues. He is a keen editor and writer, having founded Eton's environmental site theflorentina.com. He became interested in ocean conservation having watched Seaspiracy, and hopes to make a tangible impact through CyberWaves.",
+          innerimage: 'luca_matta.jpg',
+        },
+
+        {
           name: 'Ptolemy Egan',
           title: 'Outreach Director',
-          socials: [
-            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
-            {
-              icon: 'mdi-linkedin',
-              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
-            },
-          ],
+          socials: [],
           description:
             'I am an academic scholar at a boarding school near London, but I come from East Anglia. My family has lived there for rather a long time and we feel a strong connection with the nature and landscape around us. As such, when walking or enjoying nature, I am disappointed to see littering, plastic waste, and environmental degradation. I have always been keen to safeguard what I have been privileged to grow up around, and am now eager to counter the risks to it face on. At school, I also play several sports, and so enjoy working in a team.',
           innerimage: 'dummy.jpg',
         },
+
         {
-          name: 'Luca Matta',
-          title: 'Operations Director',
-          socials: [
-            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
-            {
-              icon: 'mdi-linkedin',
-              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
-            },
-          ],
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem vitae obcaecati molestiae, placeat nostrum est ab modi a in?',
-          innerimage: 'dummy.jpg',
-        },
-        {
-          name: 'Arjun Bahra',
+          name: 'Mokareoluwa Adewoye ',
           title: 'Development Manager',
-          socials: [
-            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
-            {
-              icon: 'mdi-linkedin',
-              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
-            },
-          ],
+          socials: [],
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem vitae obcaecati molestiae, placeat nostrum est ab modi a in?',
           innerimage: 'dummy.jpg',

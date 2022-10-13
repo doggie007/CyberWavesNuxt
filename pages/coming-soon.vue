@@ -16,7 +16,7 @@
         Great things coming soon.
       </h1>
     </div> -->
-    <v-container fluid class="pa-0 ma-0">
+    <!-- <v-container fluid class="pa-0 ma-0">
       <v-row no-gutters>
         <v-col cols="4">
           <v-img
@@ -32,6 +32,22 @@
           <div
             class="text-center d-flex align-center justify-center"
             style="height: 100%"
+          >
+            <div>
+              <h1 class="white--text text-h3">Great things are coming soon.</h1>
+              <br /><br />
+              <v-btn nuxt to="/">home</v-btn>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container> -->
+    <v-container fluid class="pa-0 ma-0">
+      <v-row no-gutters>
+        <v-col cols="12" style="background-color: #183033">
+          <div
+            class="text-center d-flex align-center justify-center"
+            style="height: 100vh"
           >
             <div>
               <h1 class="white--text text-h3">Great things are coming soon.</h1>
