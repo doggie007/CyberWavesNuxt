@@ -91,16 +91,15 @@
                 >
               </v-col>
               <v-col>
-                <p>Products</p>
-                <NuxtLink to="/coming-soon">Oceans</NuxtLink>
+                <p>Products & Services</p>
+                <NuxtLink to="/coming-soon">Splastic</NuxtLink>
                 <br />
-                <NuxtLink to="/coming-soon">Beaches</NuxtLink>
+                <NuxtLink to="/coming-soon">SeaVision</NuxtLink>
               </v-col>
               <v-col>
                 <p>Education</p>
                 <NuxtLink to="/coming-soon">Technologies</NuxtLink>
                 <br />
-                <NuxtLink to="/coming-soon">Blog</NuxtLink>
               </v-col>
             </v-row>
             <v-divider class="my-12"></v-divider>
@@ -126,7 +125,7 @@
             <v-row class="text-left">
               <v-col>
                 &copy;{{ new Date().getFullYear() }} — Made with 💙 by
-                <strong>James Tcheng</strong>
+                <strong>The CyberWaves Team</strong>
               </v-col>
             </v-row>
           </v-container>
@@ -198,13 +197,14 @@ export default {
         { icon: 'mdi-school-outline', link: '/learn', name: 'Learn' },
       ],
       socials: [
-        { icon: 'mdi-facebook', link: 'https://www.facebook.com/' },
-        { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
         {
-          icon: 'mdi-linkedin',
-          link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
+          icon: 'mdi-instagram',
+          link: 'https://www.instagram.com/cyberwavesorg',
         },
-        { icon: 'mdi-github', link: 'https://github.com/doggie007' },
+        {
+          icon: 'mdi-github',
+          link: 'https://github.com/doggie007/CyberWavesNuxt',
+        },
       ],
     }
   },

@@ -401,7 +401,7 @@ export default {
             { icon: 'mdi-github', link: 'https://github.com/doggie007' },
           ],
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, saepe velit quo corrupti dolores sequi voluptatibus, quis nisi ipsa nesciunt fugiat hic corporis. Pariatur, ab? Ducimus, obcaecati dicta? Molestias, repellat possimus hic ad vitae doloremque vero dolorem nam? Fugit corrupti blanditiis reprehenderit ducimus fuga, alias quo doloremque aspernatur atque esse!',
+            "James Tcheng is a 17-year-old high school student studying in grade 12 at Eton College, UK.From a young age, James has witnessed the devastating effects of plastic pollution that surround the coastal areas of his hometown, Hong Kong. Deeply troubled by its detriment to human health and the public's lack of concern on the issue, he founded the organisation CyberWaves, an online platform that aims to raise awareness and create actionable solutions through sharing information and open-source solutions that tackle the problem. CyberWaves also strives to partner with ocean conservation organisations across the globe to equip them with technological tools such as machine learning and satellite imagery to aid in their efforts, which range from research to cleanups.",
           innerimage: 'james.jpg',
         },
         {
@@ -416,7 +416,7 @@ export default {
           ],
           description:
             'The environment has always been a keen interest of mine, running clubs since primary school. However, after visiting my home country of India frequently, the level of water pollution was incredibly high which inspired my urge to work on water conservation - an often overlooked issue when discussing the environment.',
-          innerimage: 'dhruvit.jpeg',
+          innerimage: 'dhruvit.png',
         },
         {
           name: 'Luca Matta',
@@ -438,10 +438,10 @@ export default {
 
         {
           name: 'Mokareoluwa Adewoye ',
-          title: 'Development Manager',
+          title: 'Development Director',
           socials: [],
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem vitae obcaecati molestiae, placeat nostrum est ab modi a in?',
+            'Seeing the effects of overfishing and polluted waters in my hometown, I am empowered to make a difference through seeing the growth of this organisation.',
           innerimage: 'dummy.jpg',
         },
       ],
@@ -454,7 +454,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'About page description',
+          content:
+            "Learn about CyberWave's mission and how we will achieve our goals.",
         },
       ],
     }

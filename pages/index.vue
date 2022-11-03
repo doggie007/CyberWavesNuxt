@@ -75,9 +75,19 @@
         >
           We aim to raise awareness of the gravity of the
           <strong>ocean pollution problem</strong> through education and sharing
-          advanced open-source technology that tackle the issue, including
-          <strong>machine learning and satellite imaging</strong>, endeavouring
-          to combat public disengagement and encourage collaborative action.
+          technology that tackles the issue, including the use of
+          <strong>satellite imaging</strong> and
+          <strong>ocean current models</strong>, endeavouring to combat public
+          disengagement and encourage collaborative action. <br />
+          <br />
+          We hope to combat the public's scientific distrust of environmental
+          scientists in a broader context through
+          <strong>algorithmic transparency</strong> and by providing this
+          platform that shares
+          <strong
+            >accessible open-source technology used in environmental
+            research</strong
+          >. <br />
           <br />
           Partnering with ocean conservation organisations across the globe, we
           strive to equip them with essential technological weapons in our
@@ -291,9 +301,9 @@ export default {
         },
       ],
       stats: [
-        ['15+', 'Volunteers'],
-        ['2', 'Organisation partners'],
-        ['200+', 'Users'],
+        ['$150+', 'Funding'],
+        ['3+', 'Organisation Partners'],
+        ['200+', 'Monthly Users'],
       ],
     }
   },
