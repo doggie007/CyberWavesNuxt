@@ -133,6 +133,19 @@ strong {
 </style>
 <script>
 export default {
-  name: 'Child',
+  name: 'why-care-about-ocean-pollution',
+  head() {
+    return {
+      title: 'Why Care about Ocean Pollution',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Ocean pollution is one of the most widespread dangers to human health, a key contributor to global warming, and of course, destroying marine life. Yet, it continues to get worse as pollution accumulates in oceans globally, and the extent of the damage is largely misunderstood.',
+        },
+      ],
+    }
+  },
 }
 </script>

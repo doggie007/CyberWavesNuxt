@@ -183,7 +183,7 @@
         <v-row justify="center">
           <TeamMember
             v-for="(
-              { name, title, socials, description, innerimage }, i
+              { name, title, socials, description, innerimage, countryFlag }, i
             ) in team.slice(0, 1)"
             :key="i"
             :name="name"
@@ -191,12 +191,13 @@
             :socials="socials"
             :description="description"
             :innerimage="innerimage"
+            :countryFlag="countryFlag"
           />
         </v-row>
         <v-row justify="center">
           <TeamMember
             v-for="(
-              { name, title, socials, description, innerimage }, i
+              { name, title, socials, description, innerimage, countryFlag }, i
             ) in team.slice(1, 5)"
             :key="i"
             :name="name"
@@ -204,6 +205,7 @@
             :socials="socials"
             :description="description"
             :innerimage="innerimage"
+            :countryFlag="countryFlag"
           />
         </v-row>
       </v-container>
@@ -259,7 +261,7 @@
                         class="text-subtitle-1 text-sm-h5 text-md-h4 text-uppercase font-weight-bold"
                       >
                         5 <br />
-                        Outcomes
+                        Actions
                       </div>
                     </v-lazy>
                   </v-col>
@@ -283,7 +285,8 @@
                     >
                       <v-card-title
                         class="text-h4 text-sm-h3 font-weight-bold mb-3 text-uppercase text-left"
-                        >Our <br />
+                      >
+                        Our <br />
                         Belief
                       </v-card-title>
                       <v-card-subtitle>
@@ -298,11 +301,11 @@
                         We believe in the
                         <strong>combined power of people and technology</strong>
                         as a means to tackle the ocean pollution problem, in
-                        both education and actionable solutions. We realise the
-                        importance of <strong>open-source technology</strong> as
-                        it is free and accessible to all, which we believe is
-                        the only way we will be able address our environmental
-                        concerns efficiently.
+                        both raising awareness and creating actionable
+                        solutions. We realise the importance of
+                        <strong>publicly-accessible technology</strong> as it is
+                        free to all, which we believe is the only way we will be
+                        able address our environmental concerns efficiently.
                         <br />
                         <br />
                         Follow our <strong>5x5x5 framework</strong> to
@@ -323,20 +326,20 @@
                       dense
                     >
                       <v-timeline-item icon="mdi-alert" fill-dot color="pink">
-                        Identify the <br />
-                        <strong> Key Issue</strong>
+                        Identify a <br />
+                        <strong> Significant Issue</strong>
                       </v-timeline-item>
                       <v-timeline-item
                         icon="mdi-head-lightbulb-outline"
                         fill-dot
                         color="cyan"
                       >
-                        Creating a solution via applying a <br />
-                        <strong>Key Principle</strong>
+                        Apply a <br />
+                        <strong>Key Principle</strong> against the problem
                       </v-timeline-item>
                       <v-timeline-item icon="mdi-star" fill-dot>
-                        Create <strong>Solution</strong> that brings an
-                        <strong>Impactful Outcome</strong>
+                        We generate an <br />
+                        <strong>Impactful Action</strong> towards the principle
                       </v-timeline-item>
                     </v-timeline>
                   </v-col>
@@ -390,10 +393,8 @@ export default {
       team: [
         {
           name: 'James Tcheng',
-          title: 'Founder',
+          title: 'Founder & Technology Director',
           socials: [
-            { icon: 'mdi-facebook', link: 'https://www.facebook.com/' },
-            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
             {
               icon: 'mdi-linkedin',
               link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
@@ -401,39 +402,53 @@ export default {
             { icon: 'mdi-github', link: 'https://github.com/doggie007' },
           ],
           description:
-            "James Tcheng is a 17-year-old high school student studying in grade 12 at Eton College, UK.From a young age, James has witnessed the devastating effects of plastic pollution that surround the coastal areas of his hometown, Hong Kong. Deeply troubled by its detriment to human health and the public's lack of concern on the issue, he founded the organisation CyberWaves, an online platform that aims to raise awareness and create actionable solutions through sharing information and open-source solutions that tackle the problem. CyberWaves also strives to partner with ocean conservation organisations across the globe to equip them with technological tools such as machine learning and satellite imagery to aid in their efforts, which range from research to cleanups.",
+            "James Tcheng is a 17-year-old student studying in grade 12 at Eton College, UK. James has witnessed the devastating effects of plastic pollution that surrounded the coastal areas of his hometown, Hong Kong, since he was a child and during surfing. He started volunteering a beach cleanups, but deeply troubled by its detriment to human health and the public's lack of concern on the issue, he founded CyberWaves, an online platform that aims to raise awareness and create actionable solutions that tackle the problem. He wishes to support ocean conservation organisations across the globe by partnering with them, equipping them with technological tools to aid in their efforts.",
           innerimage: 'james.jpg',
-        },
-        {
-          name: 'Dhruvit Pindoria',
-          title: 'Managing Director',
-          socials: [
-            { icon: 'mdi-instagram', link: 'https://www.instagram.com' },
-            {
-              icon: 'mdi-linkedin',
-              link: 'https://www.linkedin.com/in/james-tcheng-834b1717a/',
-            },
-          ],
-          description:
-            'The environment has always been a keen interest of mine, running clubs since primary school. However, after visiting my home country of India frequently, the level of water pollution was incredibly high which inspired my urge to work on water conservation - an often overlooked issue when discussing the environment.',
-          innerimage: 'dhruvit.png',
+          countryFlag: 'hk',
         },
         {
           name: 'Luca Matta',
-          title: 'Operations Director',
-          socials: [],
+          title: 'Managing Director',
+          socials: [
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/luca-matta-b14435224/',
+            },
+          ],
           description:
-            "Luca is a 17-year-old student at Eton College, studying Maths, Further Maths, Physics, and Chemistry at A-Level. He wants to study Engineering at university and is passionate about using engineering to solve climate and environmental issues. He is a keen editor and writer, having founded Eton's environmental site theflorentina.com. He became interested in ocean conservation having watched Seaspiracy, and hopes to make a tangible impact through CyberWaves.",
+            "Luca is a 17-year-old student at Eton College, studying Maths, Further Maths, Physics, and Chemistry at A-Level. He wants to study Engineering at university and is passionate about using engineering to solve climate and environmental issues. He is a keen editor and writer, having founded Eton's environmental site TheFlorentina (theflorentina.com). He became interested in ocean conservation having watched Seaspiracy, and hopes to make a tangible impact through CyberWaves.",
           innerimage: 'luca_matta.jpg',
+          countryFlag: 'gb',
+        },
+
+        {
+          name: 'Dhruvit Pindoria',
+          title: 'Outreach Director',
+          socials: [
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/dhruvit-pindoria/',
+            },
+          ],
+          description:
+            'The environment has always been a keen interest of Dhruvit, running clubs since primary school. However, after visiting his home country of India frequently, the level of water pollution was incredibly high which inspired his urge to work on water conservation - an often overlooked issue when discussing the environment.',
+          innerimage: 'dhruvit.png',
+          countryFlag: 'in',
         },
 
         {
           name: 'Ptolemy Egan',
-          title: 'Outreach Director',
-          socials: [],
+          title: 'Design Director',
+          socials: [
+            {
+              icon: 'mdi-linkedin',
+              link: 'https://www.linkedin.com/in/ptolemy-egan-7a9543167/',
+            },
+          ],
           description:
-            'I am an academic scholar at a boarding school near London, but I come from East Anglia. My family has lived there for rather a long time and we feel a strong connection with the nature and landscape around us. As such, when walking or enjoying nature, I am disappointed to see littering, plastic waste, and environmental degradation. I have always been keen to safeguard what I have been privileged to grow up around, and am now eager to counter the risks to it face on. At school, I also play several sports, and so enjoy working in a team.',
+            'Ptolemy is an academic scholar at a boarding school near London, but he comes from East Anglia. His family has lived there for rather a long time and they feel a strong connection with the nature and landscape around them. As such, when walking or enjoying nature, Ptolemy is disappointed to see littering, plastic waste, and environmental degradation. He has always been keen to safeguard what he has been privileged to grow up around, and am now eager to counter the risks to it face on. At school, he also play several sports, and so enjoy working in a team.',
           innerimage: 'dummy.jpg',
+          countryFlag: 'gb',
         },
 
         {
@@ -443,6 +458,7 @@ export default {
           description:
             'Seeing the effects of overfishing and polluted waters in my hometown, I am empowered to make a difference through seeing the growth of this organisation.',
           innerimage: 'dummy.jpg',
+          countryFlag: 'ng',
         },
       ],
     }

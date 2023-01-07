@@ -1,6 +1,7 @@
 <template>
   <!-- <ComingSoon></ComingSoon> -->
   <v-main>
+    <h1>WaveScope</h1>
     <Feed></Feed>
   </v-main>
 </template>
@@ -17,7 +18,7 @@ export default {
           hid: 'description',
           name: 'description',
           content:
-            "Learn about CyberWave's mission and how we will achieve our goals.",
+            "Learn about CyberWave's Mission and how we will achieve our goals, as well as vital information about the ocean pollution problem.",
         },
       ],
     }

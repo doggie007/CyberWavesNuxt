@@ -118,8 +118,13 @@
           </v-card>
         </div>
       </v-overlay>
-      <v-card-title class="justify-center">{{ name }}</v-card-title>
-      <v-card-subtitle class="text-center">{{ title }}</v-card-subtitle>
+      <v-card-title class="justify-center"
+        >{{ name }}
+        <span><span>&nbsp;</span> <country-flag :country="countryFlag" /></span
+      ></v-card-title>
+      <v-card-subtitle class="text-center">
+        {{ title }}
+      </v-card-subtitle>
     </v-card>
   </v-col>
 </template>
@@ -132,6 +137,7 @@ export default {
     description: String,
     innerimage: String,
     socials: Array,
+    countryFlag: String,
   },
   data: () => ({
     absolute: true,

@@ -73,25 +73,26 @@
           class="pa-2 mx-auto title font-weight-light mb-8 text-justify"
           max-width="720"
         >
-          We aim to raise awareness of the gravity of the
-          <strong>ocean pollution problem</strong> through education and sharing
-          technology that tackles the issue, including the use of
-          <strong>satellite imaging</strong> and
-          <strong>ocean current models</strong>, endeavouring to combat public
-          disengagement and encourage collaborative action. <br />
+          We are a group of youth aiming to support ocean conservation NGOs with
+          the technology to maximize their efforts and to raise awareness of the
+          gravity of the ocean pollution problem.
           <br />
-          We hope to combat the public's scientific distrust of environmental
-          scientists in a broader context through
-          <strong>algorithmic transparency</strong> and by providing this
-          platform that shares
-          <strong
-            >accessible open-source technology used in environmental
-            research</strong
-          >. <br />
           <br />
-          Partnering with ocean conservation organisations across the globe, we
-          strive to equip them with essential technological weapons in our
-          common fight to protect our oceans.
+          Developing state-of-the-art technology, including
+          <strong>ocean currents models</strong>,
+          <strong>machine learning</strong>, and
+          <strong>remote sensing</strong>, we provide accessible open-source
+          technology for coastal cleanup NGOs to use their resources
+          effectively. Through partnering, we offer essential technological
+          weapons in our common fight to protect our oceans.
+          <br />
+          <br />
+          Sharing this same technology with the public for educational purposes,
+          we hope to incentivize collective action, and also combat the public's
+          mistrust through
+          <strong>algorithmic and scientific transparency</strong>.
+          <br />
+          <br />
         </v-responsive>
 
         <!-- <v-row class="mx-auto" no-gutters>
@@ -115,11 +116,27 @@
           </v-col>
         </v-row> -->
 
-        <div class="py-5"></div>
-
         <v-btn color="grey" outlined large link to="/about">
           <span class="grey--text text--darken-1 font-weight-bold">
-            Learn More
+            Learn about our Vision
+          </span>
+        </v-btn>
+        <br /><br />
+        <!-- <v-btn color="grey" outlined large link to="/about">
+          <span class="grey--text text--darken-1 font-weight-bold">
+            Meet the Team
+          </span>
+        </v-btn>
+        <br /><br /> -->
+        <v-btn
+          color="grey"
+          outlined
+          large
+          link
+          to="/about#five-principles-intro"
+        >
+          <span class="grey--text text--darken-1 font-weight-bold">
+            Understand our Belief + Principles
           </span>
         </v-btn>
         <div class="py-10"></div>
@@ -302,8 +319,8 @@ export default {
       ],
       stats: [
         ['$150+', 'Funding'],
-        ['3+', 'Organisation Partners'],
-        ['200+', 'Monthly Users'],
+        ['3+', 'NGO Partners'],
+        ['300+', 'Monthly Views'],
       ],
     }
   },
@@ -315,7 +332,7 @@ export default {
           hid: 'description',
           name: 'description',
           content:
-            'CyberWaves is a platform that educates and shares open-source technology',
+            'CyberWaves is a Youth-Led Platform created to tackle Ocean Pollution by Sharing Technology to Support NGOs and Raise Awareness Effectively.',
         },
       ],
     }
