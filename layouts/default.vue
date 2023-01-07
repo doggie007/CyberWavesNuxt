@@ -30,8 +30,8 @@
         <v-avatar class="mr-3" color="grey lighten-5" size="70">
           <v-img
             contain
-            max-height="70%"
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+            max-height="80%"
+            :src="require('static/cyberwaves-v.png')"
           ></v-img>
         </v-avatar>
       </NuxtLink>
@@ -219,4 +219,3 @@ a:hover {
   opacity: 0.7;
 }
 </style>
-e

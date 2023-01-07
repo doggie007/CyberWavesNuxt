@@ -1,5 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
+const main_base_URL = 'https://cyber-waves.com'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -70,6 +72,13 @@ export default {
         },
       },
     },
+  },
+
+  sitemap: {
+    hostname: main_base_URL,
+  },
+  env: {
+    main_base_URL,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
