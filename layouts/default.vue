@@ -27,11 +27,10 @@
 
     <v-app-bar app color="white" height="80%">
       <NuxtLink to="/">
-        <v-avatar class="mr-3" color="grey lighten-5" size="70">
+        <v-avatar tile class="mr-3" color="grey lighten-5" size="70">
           <v-img
             contain
-            max-height="80%"
-            :src="require('static/cyberwaves-v.png')"
+            :src="require('static/cyberwaves-full-logo.png')"
           ></v-img>
         </v-avatar>
       </NuxtLink>

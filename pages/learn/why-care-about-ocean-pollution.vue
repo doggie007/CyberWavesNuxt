@@ -136,7 +136,7 @@ export default {
   name: 'why-care-about-ocean-pollution',
   head() {
     return {
-      title: 'Why Care about Ocean Pollution',
+      title: 'Why You Must Care About Ocean Pollution',
       meta: [
         {
           hid: 'description',
