@@ -93,6 +93,9 @@
           <strong>algorithmic and scientific transparency</strong>.
           <br />
           <br />
+          <p class="blue--text font-weight-bold">
+            If you are a cleanup organization, contact us for support!
+          </p>
         </v-responsive>
 
         <!-- <v-row class="mx-auto" no-gutters>
@@ -116,12 +119,13 @@
           </v-col>
         </v-row> -->
 
-        <v-btn color="grey" outlined large link to="/about">
+        <!-- <v-btn color="grey" outlined large link to="/about">
           <span class="grey--text text--darken-1 font-weight-bold">
-            Learn about our Vision
+            Our Vision
           </span>
         </v-btn>
-        <br /><br />
+        <br />
+        <br /> -->
         <!-- <v-btn color="grey" outlined large link to="/about">
           <span class="grey--text text--darken-1 font-weight-bold">
             Meet the Team
@@ -136,10 +140,15 @@
           to="/about#five-principles-intro"
         >
           <span class="grey--text text--darken-1 font-weight-bold">
-            Understand our Belief + Principles
+            Our Principles
           </span>
         </v-btn>
-        <div class="py-10"></div>
+        <br />
+        <br />
+        <v-btn color="blue" outlined large>
+          <span class="blue--text font-weight-black"> CONTACT US </span>
+        </v-btn>
+        <div class="py-6"></div>
       </v-container>
     </section>
 
@@ -184,6 +193,114 @@
 
 				<div class="py-12"></div>
 			</section> -->
+
+    <!-- splastic section -->
+    <section id="splastic">
+      <v-row no-gutters>
+        <v-col cols="7" style="background-color: #183033">
+          <div class="d-flex text-left align-center pa-6" style="height: 80vh">
+            <div>
+              <h1 class="white--text text-h2 font-weight-light mb-2">
+                Splastic
+              </h1>
+              <v-responsive>
+                <v-divider
+                  style="background-color: aquamarine"
+                  class="mb-1"
+                ></v-divider>
+                <v-divider style="background-color: aqua"></v-divider>
+              </v-responsive>
+
+              <div class="d-flex text-left align-center pa-6">
+                <p class="white--text text-subtitle-2 font-weight-black">
+                  Splastic predicts the movement of ocean pollution patches by
+                  running ocean currents models, informing NGOs where most
+                  pollutants originate from.
+                </p>
+              </div>
+              <div class="d-flex text-left align-center">
+                <p class="white--text font-weight-light">
+                  By running our ocean model backwards in time, we locate
+                  coastal areas where the most trash comes from, maximizing the
+                  impact of cleanup efforts. <br />
+                  <br />
+                  <span class="blue--text">
+                    At the moment, we feed in many randomized pollution patch
+                    locations to the model. See
+                    <span class="font-weight-bold">SeaVision</span> for more
+                    info.
+                  </span>
+                  <br />
+                  <br />
+                  We work independently with NGOs to inform them their best plan
+                  of action, but you can try out our visualization platform!
+                  Based around South-East Asia's coast, you can see where
+                  pollution patches originate or end up!
+                  <br />
+                  <br />
+                </p>
+              </div>
+
+              <v-btn color="blue" nuxt to="/splastic"
+                >Try it out <v-icon>mdi-arrow-right</v-icon></v-btn
+              >
+              <span class="mr-3"></span>
+              <v-btn color="orange" nuxt to="/splastic"
+                >How does it work?</v-btn
+              >
+            </div>
+          </div>
+        </v-col>
+        <v-col style="background-color: #f9f9f9"> </v-col>
+      </v-row>
+    </section>
+
+    <!-- seavision section -->
+    <section id="seavision">
+      <v-row no-gutters>
+        <v-col style="background-color: #f9f9f9"> </v-col>
+        <v-col cols="5" style="background-color: blueviolet">
+          <div class="d-flex text-left align-center pa-6" style="height: 80vh">
+            <div>
+              <h1 class="white--text text-h2 font-weight-light mb-2">
+                SeaVision
+              </h1>
+              <v-responsive>
+                <v-divider
+                  style="background-color: aquamarine"
+                  class="mb-1"
+                ></v-divider>
+                <v-divider style="background-color: aqua"></v-divider>
+              </v-responsive>
+
+              <div class="d-flex text-left align-center pa-6">
+                <p class="white--text text-subtitle-2 font-weight-black">
+                  SeaVision applies machine learning to remotely-sensed
+                  high-resolution marine satellite images, locating marine
+                  plastic pollution patches.
+                </p>
+              </div>
+              <div class="d-flex text-left align-center">
+                <p class="white--text text-weight-light">
+                  <span class="blue--text">
+                    To feed the most accurate marine pollution location data
+                    into
+                    <span class="font-weight-bold">Splastic</span>, we need to
+                    first know where the pollution patches currently are!</span
+                  >
+                  <br />
+                  <br />
+                  We are looking for funding to purchase large quantities of
+                  real-time satellite images.
+                </p>
+              </div>
+
+              <v-btn color="orange">How does it work?</v-btn>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+    </section>
 
     <!-- Impact Section -->
     <section id="impact">

@@ -1,12 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-      right
-      style="position: fixed; top: 0; right: 0; overflow-y: scroll"
-    >
+    <v-navigation-drawer v-model="drawer" absolute temporary right>
       <v-list nav dense>
         <v-list-item-group class="mt-5">
           <v-list-item
@@ -82,7 +76,7 @@
                 <br />
                 <NuxtLink
                   :to="{ path: '/about', hash: 'five-principles-intro' }"
-                  >Our Belief</NuxtLink
+                  >Our Principles</NuxtLink
                 >
                 <br />
                 <NuxtLink :to="{ path: '/about', hash: 'our-team' }"
@@ -91,13 +85,15 @@
               </v-col>
               <v-col>
                 <p>Products & Services</p>
-                <NuxtLink to="/coming-soon">Splastic</NuxtLink>
+                <NuxtLink to="/splastic">Splastic</NuxtLink>
                 <br />
-                <NuxtLink to="/coming-soon">SeaVision</NuxtLink>
+                <NuxtLink :to="{ path: '/', hash: 'seavision' }"
+                  >SeaVision</NuxtLink
+                >
               </v-col>
               <v-col>
                 <p>Education</p>
-                <NuxtLink to="/coming-soon">Technologies</NuxtLink>
+                <NuxtLink to="/learn">WaveScope</NuxtLink>
                 <br />
               </v-col>
             </v-row>
