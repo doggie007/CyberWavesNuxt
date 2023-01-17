@@ -78,19 +78,16 @@
           gravity of the ocean pollution problem.
           <br />
           <br />
-          Developing state-of-the-art technology, including
-          <strong>ocean currents models</strong>,
-          <strong>machine learning</strong>, and
-          <strong>remote sensing</strong>, we provide accessible open-source
-          technology for coastal cleanup NGOs to use their resources
+          Developing state-of-the-art technology, including ocean currents
+          models, machine learning, and remote sensing, we provide accessible
+          open-source technology for coastal cleanup NGOs to use their resources
           effectively. Through partnering, we offer essential technological
           weapons in our common fight to protect our oceans.
           <br />
           <br />
-          Sharing this same technology with the public for educational purposes,
-          we hope to incentivize collective action, and also combat the public's
-          mistrust through
-          <strong>algorithmic and scientific transparency</strong>.
+          Sharing this same technology with the public to further understanding,
+          we incentivize collective action and combat the public's mistrust
+          through algorithmic and scientific transparency.
           <br />
           <br />
           <p class="blue--text font-weight-bold">
@@ -133,6 +130,17 @@
         </v-btn>
         <br /><br /> -->
         <v-btn
+          href="https://www.instagram.com/cyberwavesorg/"
+          target="_blank"
+          color="blue"
+          outlined
+          large
+        >
+          <span class="blue--text font-weight-black"> CONTACT US </span>
+        </v-btn>
+        <br />
+        <br />
+        <v-btn
           color="grey"
           outlined
           large
@@ -143,11 +151,7 @@
             Our Principles
           </span>
         </v-btn>
-        <br />
-        <br />
-        <v-btn color="blue" outlined large>
-          <span class="blue--text font-weight-black"> CONTACT US </span>
-        </v-btn>
+
         <div class="py-6"></div>
       </v-container>
     </section>
@@ -197,8 +201,8 @@
     <!-- splastic section -->
     <section id="splastic">
       <v-row no-gutters>
-        <v-col cols="7" style="background-color: #183033">
-          <div class="d-flex text-left align-center pa-6" style="height: 80vh">
+        <v-col cols="7" style="background-color: #304e52">
+          <div class="d-flex text-left align-center pa-6">
             <div>
               <h1 class="white--text text-h2 font-weight-light mb-2">
                 Splastic
@@ -226,15 +230,15 @@
                   <br />
                   <span class="blue--text">
                     At the moment, we feed in many randomized pollution patch
-                    locations to the model. See
-                    <span class="font-weight-bold">SeaVision</span> for more
-                    info.
+                    locations to the model. We hope to use
+                    <span class="font-weight-bold">SeaVision</span> for getting
+                    this info!
                   </span>
                   <br />
                   <br />
                   We work independently with NGOs to inform them their best plan
                   of action, but you can try out our visualization platform!
-                  Based around South-East Asia's coast, you can see where
+                  Based around South-East China's coast, you can see where
                   pollution patches originate or end up!
                   <br />
                   <br />
@@ -242,25 +246,61 @@
               </div>
 
               <v-btn color="blue" nuxt to="/splastic"
-                >Try it out <v-icon>mdi-arrow-right</v-icon></v-btn
+                >Try Splastic <v-icon>mdi-arrow-top-right-thick</v-icon></v-btn
               >
               <span class="mr-3"></span>
-              <v-btn color="orange" nuxt to="/splastic"
-                >How does it work?</v-btn
+              <v-btn color="orange" nuxt to="/splastic">How it works</v-btn>
+              <v-btn
+                icon
+                color="black"
+                href="https://github.com/doggie007/CyberWavesResearch/tree/main/Splastic"
               >
+                <v-icon x-large> mdi-github </v-icon>
+              </v-btn>
             </div>
           </div>
         </v-col>
-        <v-col style="background-color: #f9f9f9"> </v-col>
+        <v-col cols="5" style="background-color: #ddedf0">
+          <v-container fill-height fluid>
+            <v-row align="center" justify="center">
+              <v-col>
+                <v-img
+                  :src="require('assets/splastic-img.png')"
+                  min-height="100%"
+                ></v-img
+              ></v-col>
+            </v-row>
+          </v-container>
+        </v-col>
       </v-row>
     </section>
 
     <!-- seavision section -->
     <section id="seavision">
       <v-row no-gutters>
-        <v-col style="background-color: #f9f9f9"> </v-col>
-        <v-col cols="5" style="background-color: blueviolet">
-          <div class="d-flex text-left align-center pa-6" style="height: 80vh">
+        <v-col cols="6" class="text-center" style="background-color: #f0f0f0">
+          <!-- <v-img :src="require('assets/greece-satellite-image.jpg')"></v-img> -->
+          <v-container fill-height fluid>
+            <v-row align="center" justify="center">
+              <v-col>
+                <v-img
+                  :src="require('assets/greece-satellite-image.jpg')"
+                  min-height="100%"
+                ></v-img
+              ></v-col>
+            </v-row>
+          </v-container>
+          <!-- <v-container fill-height fluid>
+            <v-row
+              class="fill-height"
+              justify="center"
+              align="center"
+            >
+            </v-row>
+          </v-container> -->
+        </v-col>
+        <v-col cols="6" style="background-color: #875f9a">
+          <div class="d-flex text-left align-center pa-6">
             <div>
               <h1 class="white--text text-h2 font-weight-light mb-2">
                 SeaVision
@@ -273,7 +313,7 @@
                 <v-divider style="background-color: aqua"></v-divider>
               </v-responsive>
 
-              <div class="d-flex text-left align-center pa-6">
+              <div class="d-flex text-left align-center pa-6 overflow-auto">
                 <p class="white--text text-subtitle-2 font-weight-black">
                   SeaVision applies machine learning to remotely-sensed
                   high-resolution marine satellite images, locating marine
@@ -282,6 +322,10 @@
               </div>
               <div class="d-flex text-left align-center">
                 <p class="white--text text-weight-light">
+                  We aim to map areas of polluted coasts to show the scale of
+                  the problem.
+                  <br />
+                  <br />
                   <span class="blue--text">
                     To feed the most accurate marine pollution location data
                     into
@@ -290,12 +334,19 @@
                   >
                   <br />
                   <br />
-                  We are looking for funding to purchase large quantities of
-                  real-time satellite images.
+                  Due to the limited number of real-time satellite images we can
+                  purchase, we are unable to display the data.
                 </p>
               </div>
 
-              <v-btn color="orange">How does it work?</v-btn>
+              <v-btn nuxt to="/" color="orange">How it works</v-btn>
+              <v-btn
+                icon
+                color="black"
+                href="https://github.com/doggie007/CyberWavesResearch/tree/main/plastic_detection"
+              >
+                <v-icon x-large> mdi-github </v-icon>
+              </v-btn>
             </div>
           </div>
         </v-col>
@@ -306,7 +357,7 @@
     <section id="impact">
       <v-parallax
         :height="$vuetify.breakpoint.smAndDown ? 700 : 500"
-        :src="require('assets/dimmed-forest.jpg')"
+        :src="require('assets/beach-pollution-dimmed.jpg')"
       >
         <v-container fill-height justify-center>
           <v-row></v-row>
@@ -315,7 +366,7 @@
               v-for="[value, title] of stats"
               :key="title"
               cols="12"
-              md="4"
+              md="6"
             >
               <div class="text-center">
                 <div
@@ -435,9 +486,8 @@ export default {
         },
       ],
       stats: [
-        ['$150+', 'Funding'],
-        ['3+', 'NGO Partners'],
-        ['300+', 'Monthly Views'],
+        ['$400+', 'Funding'],
+        ['3', 'NGO Partners'],
       ],
     }
   },

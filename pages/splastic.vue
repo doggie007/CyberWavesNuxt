@@ -121,7 +121,8 @@
                 <br />
                 <br />
                 Note that ocean circulation is fundamentally a chaotic system,
-                while the model is deterministic.
+                while our model is deterministic. Our ocean current data is also
+                not fully accurate and complete.
               </v-col>
             </v-row>
             <v-row>
@@ -129,9 +130,11 @@
                 <v-divider class="mb-3"></v-divider>
                 <p class="text-h6">How to use</p>
                 <p class="text-subtitle-1 blue--text font-weight-bold">
-                  Click on anywhere in the ocean to "place" the plastic patches,
-                  specify the duration to simulate the path backwards or
-                  forwards in time, then click simulate!
+                  Click on anywhere in the ocean to "place" the
+                  <span class="orange--text"> plastic patches</span>, specify
+                  the duration to simulate the path backwards or forwards in
+                  time, then click simulate! You'll see
+                  <span class="red--text">where</span> it started!
                 </p>
               </v-col>
             </v-row>
@@ -370,6 +373,7 @@ export default {
         // Weird hotfix
         this.toggleSidebar()
         this.toggleSidebar()
+        this.toggleSidebar()
       })
 
       const LotsOfPointsMode = {}
@@ -448,6 +452,7 @@ export default {
 
       this.isSimulating = true
       const coords = this.getPoints()
+      console.log(coords)
       const json = JSON.stringify({
         particles: coords,
       })
@@ -463,7 +468,7 @@ export default {
             'Content-Type': 'application/json',
           },
           params: {
-            forward: this.forwards,
+            forward: !this.forwards,
             time_duration: this.sliderDuration, // in days
             time_delta: dt, // in hours
             output_delta: dt, // in hours; match time_delta
