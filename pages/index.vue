@@ -35,8 +35,8 @@
                     <br />
                     <div class="py-4"></div>
                     <span class="font-weight-light text-h6 text-sm-h5">
-                      Empowering a wave of technological change to save our
-                      oceans.</span
+                      Empowering a wave of technological change to support
+                      cleanup organizations and save our oceans.</span
                     >
                   </v-col>
                   <v-spacer></v-spacer>
@@ -78,6 +78,9 @@
           gravity of the ocean pollution problem.
           <br />
           <br />
+          <span class="purple--text font-weight-bold"
+            >REVOLUTIONISE CLEANUPS</span
+          >
           Developing state-of-the-art technology, including ocean currents
           models, machine learning, and remote sensing, we provide accessible
           open-source technology for coastal cleanup NGOs to use their resources
@@ -85,6 +88,7 @@
           weapons in our common fight to protect our oceans.
           <br />
           <br />
+          <span class="purple--text font-weight-bold">CHANGE MINDSETS</span>
           Sharing this same technology with the public to further understanding,
           we incentivize collective action and combat the public's mistrust
           through algorithmic and scientific transparency.

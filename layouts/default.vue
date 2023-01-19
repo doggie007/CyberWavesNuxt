@@ -1,6 +1,12 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" absolute temporary right>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+      right
+      style="position: fixed; top: 0; right: 0; overflow-y: scroll"
+    >
       <v-list nav dense>
         <v-list-item-group class="mt-5">
           <v-list-item
