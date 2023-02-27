@@ -74,8 +74,8 @@
           max-width="720"
         >
           We are a group of youth aiming to support ocean conservation NGOs with
-          the technology to maximize their efforts and to raise awareness of the
-          gravity of the ocean pollution problem.
+          the technology to maximize their efforts while raising awareness of
+          the gravity of the ocean pollution problem.
           <br />
           <br />
           <span class="purple--text font-weight-bold"
@@ -84,8 +84,9 @@
           Developing state-of-the-art technology, including ocean currents
           models, machine learning, and remote sensing, we provide accessible
           open-source technology for coastal cleanup NGOs to use their resources
-          effectively. Through partnering, we offer essential technological
-          weapons in our common fight to protect our oceans.
+          effectively. Through partnering, we offer them the essential
+          technological tool to find optimal cleanup locations which maximises
+          cost-effectiveness and impact.
           <br />
           <br />
           <span class="purple--text font-weight-bold">CHANGE MINDSETS</span>
